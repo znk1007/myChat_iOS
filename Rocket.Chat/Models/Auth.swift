@@ -16,7 +16,7 @@ final class Auth: Object {
 
     var apiHost: URL? {
         guard
-            let socketURL = URL(string: serverURL, scheme: "https"),
+            let socketURL = URL(string: serverURL, scheme: "http"),
             var components = URLComponents(url: socketURL, resolvingAgainstBaseURL: true)
         else {
             return nil

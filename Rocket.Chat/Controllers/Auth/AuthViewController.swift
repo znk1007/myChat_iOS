@@ -218,7 +218,7 @@ final class AuthViewController: BaseViewController {
 
     @IBAction func buttonTermsDidPressed(_ sender: Any) {
         var components = URLComponents()
-        components.scheme = "https"
+        components.scheme = "http"
         components.host = self.serverURL.host
 
         if var newURL = components.url {
@@ -231,7 +231,7 @@ final class AuthViewController: BaseViewController {
 
     @IBAction func buttonPolicyDidPressed(_ sender: Any) {
         var components = URLComponents()
-        components.scheme = "https"
+        components.scheme = "http"
         components.host = self.serverURL.host
 
         if var newURL = components.url {

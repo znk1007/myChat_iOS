@@ -21,7 +21,7 @@ final class ConnectServerViewController: BaseViewController {
         if urlText.isEmpty {
             urlText = defaultURL
         }
-        return  URL(string: urlText, scheme: "https")
+        return  URL(string: urlText, scheme: "http")
     }
 
     var serverPublicSettings: AuthSettings?
